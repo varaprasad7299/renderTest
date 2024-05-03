@@ -32,7 +32,7 @@ app.get('/delete', (req, res) => {
 })
 
 app.get('/read', (req, res) => {
-    fs.readFile('./files/file.txt.txt', 'utf8', (err, data) => {
+    fs.readFile('./files/file.txt', 'utf8', (err, data) => {
         if (err) {
             console.error(err);
             return;
